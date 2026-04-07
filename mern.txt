@@ -1,0 +1,110 @@
+MERN
+
+client    -> server    -> db
+frontend    backend     persistent store
+UI          App logic 
+
+
+client : React JS | Angular | Vue JS
+	(JavaScipt | TypeScript)
+	UI : HTML/CSS, UI Framework- Bootstrap
+server : JS(express JS) | Py (Fast/Flask/Django) | Java (SB) | C# |Go
+	(Rest API)
+Db : RDBMS, oracle, sql server, mysql, sqlite, postgres
+	No SQL: Mongo, Cassandra
+	
+	
+MERN - Full stack
+	
+	client  ->  server  ->  db
+	React JS -> Express JS / Node JS -> Mongo DB
+	
+	Nde JS - hv compiler, like a lang
+	Express JS - Big library
+	
+	No SQL - NO rules, we can dlt, modify, add without any regulations, we can also set rules
+	
+	MongoDB 
+		It is a db
+		It can be Cloud Mongo DB Server
+		or
+		Local Mongo DB server
+		
+		Cloud : 
+			Distributed Networking
+			Cluster - Many sys or computer working together
+			Saas - software as a service
+			Cloud
+			
+	
+	Working with 
+     Cloud Mongo DB Server
+     1. go to "mongodb.com" or search mongo cloud 
+     2. sign up via google account 
+     3. Cluster -> Build a cluster 
+        Option: Free (512 MB, shared RAM, shared CPU)
+        Cluster Name: Cluster0  (Default)
+        Cloud: AWS 
+        Region: Mumbai ap-south-1
+        -> Create Deployment
+        !Under Deployment 
+     4. Side Menu Bar-> Clusters 
+        If "Connect" is there 
+        we may connect from our computer
+        Need: 
+            1. username 
+            2. network inbound connection 
+     5. Under Security in Left Side Menu Bar 
+        -> Database and Network Access 
+        Username: mahesh
+        Password: 1234
+        Built-in-Role:Atlas Admin 
+        -> Add User  
+    6. Under Security in Left Side Menu Bar 
+        -> Database and Network Access
+        -> IP Access List
+        -> Add IP Access List Entry 
+           Access List Entry: 0.0.0.0/0
+           (Everyone from everywhere) 
+        -> Confirm 
+    7. Ready to connect to cloud mongo server 
+    7.1. Connect via Mongo Shell 
+        Side Menu Bar 
+        -> Clusters 
+        -> Connect 
+        -> Shell 
+            -> I dont have Mongo Shell 
+            -> Download the shell 
+            -> Install shell 
+            -> Terminal or Command Prompt 
+            $ mongosh --version
+            It displayed the version. 
+        -> Copy connection string 
+           mongosh "mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/" - copy it and paste it in cmd
+        -> Extract only the connection string 
+           !Modify it 
+           /
+			mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/
+           ->
+
+           mongodb+srv://username:password@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongosh "connectionString"
+
+           ->  mongosh "mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/" - copy it and paste it in cmd
+    7.2 Give the mongosh along with connstr in the terminal:
+           mongosh "mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/"
+        We connected to the server. 
+        Test> 
+        is the mongo shell.
+		
+		
+		
+		mongosh "mongodb+srv://cluster0.k2joguo.mongodb.net/" --apiVersion 1 --username Rakshitha
+		
+		
+		mongodb+srv://Rakshitha:<db_password>@cluster0.k2joguo.mongodb.net/
