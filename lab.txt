@@ -1,0 +1,148 @@
+git account
+repo named MERN_MTD_apr26
+open git desktop
+sign in to account
+In file open clone repo and search for MERN_MTD_apr26
+and clone it
+open via vs code
+in vs code in that Readme file write Author: Rakshithamrakshi and save
+in desktop summary write Author update and commit changes
+
+
+
+Mongo DB
+	Cloud Mongo DB server
+	1. in chrome search cloud mongodb
+	2. sign in
+	3. Cluster -> Build a cluster
+	  Deploy your cluster page
+	   select free
+	   Cluster name : dafault
+	   Cloud(Provider) : AWS
+	   region : Mumbai(ap south 1)
+	   create cluster
+	   
+	Mongo DB:
+    Cloud Mongo DB Server 
+    Or 
+    Local Mongo DB Server
+
+Working with 
+     Cloud Mongo DB Server
+     1. go to "mongodb.com" or search mongo cloud 
+     2. sign up via google account 
+     3. Cluster -> Build a cluster 
+        Option: Free (512 MB, shared RAM, shared CPU)
+        Cluster Name: Cluster0  (Default)
+        Cloud: AWS 
+        Region: Mumbai ap-south-1
+        -> Create Deployment
+        !Under Deployment 
+     4. Side Menu Bar-> Clusters 
+        If "Connect" is there 
+        we may connect from our computer
+        Need: 
+            1. username 
+            2. network inbound connection 
+     5. Under Security in Left Side Menu Bar 
+        -> Database and Network Access 
+        Username: mahesh
+        Password: 1234
+        Built-in-Role:Atlas Admin 
+        -> Add User  
+    6. Under Security in Left Side Menu Bar 
+        -> Database and Network Access
+        -> IP Access List
+        -> Add IP Access List Entry 
+           Access List Entry: 0.0.0.0/0
+           (Everyone from everywhere) 
+        -> Confirm 
+    7. Ready to connect to cloud mongo server 
+    7.1. Connect via Mongo Shell 
+        Side Menu Bar 
+        -> Clusters 
+        -> Connect 
+        -> Shell 
+            -> I dont have Mongo Shell 
+            -> Download the shell 
+            -> Install shell 
+            -> Terminal or Command Prompt 
+            $ mongosh --version
+            It displayed the version. 
+        -> Copy connection string 
+            mongosh "mongodb+srv://cluster0.we7nuaw.mongodb.net/" --apiVersion 1 --username mahesh
+        -> Extract only the connection string 
+           !Modify it 
+           mongodb+srv://cluster0.we7nuaw.mongodb.net/
+
+           ->
+
+           mongodb+srv://username:password@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/
+
+           -> 
+           mongosh "connectionString"
+
+           -> 
+    7.2 Give the mongosh along with connstr in the terminal:
+           mongosh "mongodb+srv://mahesh:1234@cluster0.we7nuaw.mongodb.net/"
+        We connected to the server. 
+        Test> 
+        is the mongo shell. 
+    
+    
+
+            
+Cloud :
+    Distributed Networking 
+    Cluster 
+    Saas (Software as a service)
+    Cloud 
+	   
+	   
+	   UserName : Rakshitha
+	   password : 1234
+	   If any username is there 1st dlt that
+	   
+	   Under Security in left side bar
+	   under Database and Network access in left side
+	   In that Network Access click IP Address List
+	   In Add IP adress List Entry page
+	       give Access List Entry as -> 0.0.0.0/0 - It is IP address everyone can access from anywhere
+		   then give Confirm
+	   Now Ready to connect to Cloud mongo server
+	   go to left side bar click on Cluster
+	   click connect
+	   via shell 
+			select i dont hv shell and install from there
+			after download complte the installation and click finish
+			go to cmd and type mongosh --version
+			
+			copy the connection str
+			mongosh "mongodb+srv://cluster0.k2joguo.mongodb.net/" --apiVersion 1 --username Rakshitha
+			mongodb+srv://cluster0.k2joguo.mongodb.net/  - It is the connection string
+			
+			mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/
+			
+			mongosh "mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/" - copy it and paste it in cmd
+			we connected to server
+			test>  - It will be displayed after we gave the above link to cmd 
+			is the mongo shell
+			
+			
+			
+	In Command Prompt
+	
+	mongosh --version
+	mongosh "mongodb+srv://Rakshitha:1234@cluster0.k2joguo.mongodb.net/"
+	show databases
+	use trainer_app_db
+	show databases
+	db.trainers.insertOne({"name":"Nithin", "skills" : "JavaScript", "photo" : ""})
+	show databases
+	show collections
+	db.trainers.find()
+	db.trainers.insertOne({"name":"Mahesh", "skills" : "JavaScript", "photo" : ""})
+	db.trainers.find()
